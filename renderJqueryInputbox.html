@@ -1,0 +1,36 @@
+<!-- Render values from one input box to another -->
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+   $("#copy").click(function(){
+   		
+        $("#in11").val($("#in1").val());
+         $("#in12").val($("#in2").val());
+          $("#in13").val($("#in3").val());
+    });
+    });
+
+</script>
+
+<body>
+<div>
+<p>Input something in the input box:</p>
+<p>name:<input type="text" id="in1"></p>
+<p>address:<input type="text" id="in2"></p>
+<p>City:<input type="text" id="in3"></p>
+
+<p id="copy">Same as above</p>
+
+<p>Input something in the input box:</p>
+<p>new name:<input type="text" id="in11"></p>
+<p> new address:<input type="text" id="in12"></p>
+<p> new City:<input type="text" id="in13"></p>
+
+</div>
+</body>
+</html>

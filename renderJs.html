@@ -1,0 +1,17 @@
+<!-- to render values entered through text box into a html element -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Input: <input type="text" id="myText" onkeypress="myFunction()">
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

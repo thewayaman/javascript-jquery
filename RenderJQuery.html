@@ -1,0 +1,21 @@
+<!--to render values inserted via a text box into the paragaraph element -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").keypress(function(){
+        $("p").html($("input").val());
+    });
+});
+</script>
+</head>
+<body>
+Enter your name: <input type="text">
+<button>Change content of all p elements</button>
+
+<p>This is a paragraph.</p>
+</body>
+</html>
